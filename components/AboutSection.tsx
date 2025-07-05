@@ -66,7 +66,7 @@ export default function AboutSection() {
           >
             <div className="w-80 h-auto lg:w-[400px] rounded-lg overflow-hidden shadow-md">
               <img
-                src="/images/doctor.png" // Yaha Dr. Serena Blake ki image ka path laga dena
+                src="/image/about-dr.png" //
                 alt="Dr. Serena Blake"
                 className="w-full h-full object-cover object-center"
               />

@@ -9,19 +9,19 @@ export default function TherapyAndServicesSection() {
       title: 'Anxiety & Stress Management',
       description:
         'Learn effective coping strategies to manage anxiety and stress through evidence-based techniques including cognitive-behavioral therapy and mindfulness practices.',
-      image: '/images/anxiety.jpg', // Apni image path lagana
+      image: '/image/service1.jpg', 
     },
     {
       title: 'Relationship Counseling',
       description:
         'Strengthen communication and deepen connections in your relationships through personalized therapy sessions focused on building trust and understanding.',
-      image: '/images/relationship.jpg', // Apni image path lagana
+      image: '/image/service2.jpg',
     },
     {
       title: 'Trauma Recovery',
       description:
         'Heal from past experiences with compassionate, trauma-informed care that helps you process difficult emotions and build resilience for the future.',
-      image: '/images/trauma.jpg', // Apni image path lagana
+      image: '/image/service3.jpg', 
     },
   ];
 
