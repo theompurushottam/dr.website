@@ -23,7 +23,7 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="text-[32px] md:text-[36px] font-serif text-gray-900 font-semibold mb-6"
             >
-              About Dr. Jennifer Hahm
+              About Dr. Serena Blake
             </motion.h2>
 
             <div className="space-y-6 text-[17px] leading-[1.9] text-gray-700 font-sans">
@@ -33,10 +33,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                Finding time and opportunities to care for ourselves can be incredibly challenging in today’s busy and demanding world.
-                I believe therapy offers a dedicated space for self-care, providing the support and tools needed to improve this essential practice.
-                Therapy can help individuals identify and clarify their goals, values, and the various elements that contribute to their well-being,
-                recognizing that these aspects vary from person to person.
+                In today’s fast-paced and demanding world, prioritizing self-care can feel overwhelming. Dr. Serena Blake believes that therapy is a powerful and intentional space to foster personal growth, emotional healing, and long-term well-being.
               </motion.p>
 
               <motion.p
@@ -45,10 +42,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                I am dedicated to supporting this journey by offering active listening, psychological knowledge, empathy, compassion, and insights
-                into behavioral patterns and tendencies. I hold a master’s degree in Clinical Psychology from the Michigan School of Psychology (2012)
-                and a Ph.D. in Counseling Psychology from Western Michigan University (2018). My experience spans therapy and psychological assessment
-                in psychiatric inpatient units, academic medical centers, universities, and outpatient practice settings.
+                Dr. Serena Blake holds a Doctorate in Clinical Psychology and has extensive experience working in hospitals, universities, and private practices. She specializes in helping individuals navigate challenges like anxiety, depression, life transitions, and trauma. Her warm, compassionate, and personalized approach creates a safe environment for clients to explore their thoughts and emotions.
               </motion.p>
 
               <motion.p
@@ -57,7 +51,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
                 viewport={{ once: true }}
               >
-                My therapeutic approach is primarily psychodynamic and humanistic, focusing on building insight and fostering self-compassion to support long-term growth and healing.
+                Dr. Blake’s therapeutic style is integrative, combining evidence-based strategies with a humanistic perspective. She is committed to supporting clients in building self-awareness, resilience, and a deeper sense of self-compassion to create meaningful and lasting change.
               </motion.p>
             </div>
           </motion.div>
@@ -72,8 +66,8 @@ export default function AboutSection() {
           >
             <div className="w-80 h-auto lg:w-[400px] rounded-lg overflow-hidden shadow-md">
               <img
-                src="/images/doctor.png" // Replace with the correct image path
-                alt="Dr. Jennifer Hahm"
+                src="/images/doctor.png" // Yaha Dr. Serena Blake ki image ka path laga dena
+                alt="Dr. Serena Blake"
                 className="w-full h-full object-cover object-center"
               />
             </div>
