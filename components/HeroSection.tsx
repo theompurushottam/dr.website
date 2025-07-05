@@ -26,6 +26,7 @@ export default function HeroSection() {
         </h1>
         <h2 className="text-xl md:text-2xl text-white/90 mb-12 font-sans max-w-2xl mx-auto">
           Helping you find balance and clarity in your life.
+          <a href="https://psypact.org/mpage/psypactmap" target="_blank"></a>
         </h2>
         <Button 
           onClick={handleBookConsult}

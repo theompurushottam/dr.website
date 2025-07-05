@@ -1,42 +1,79 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
 export default function Footer() {
   return (
-    <footer className="bg-primary-text text-white section-padding">
-      <div className="container-custom">
-        <div className="grid md:grid-cols-3 gap-16 mb-16">
-          <div>
-            <h3 className="h4 mb-8 text-white font-serif">Dr. Serena Blake, PsyD</h3>
-            <p className="text-gray-300 font-sans">
-              Licensed Clinical Psychologist providing compassionate, evidence-based therapy 
-              in Los Angeles and online.
-            </p>
-          </div>
-          
-          <div>
-            <h3 className="h4 mb-8 text-white font-serif">Contact</h3>
-            <div className="space-y-3 text-gray-300 font-sans">
-              <p>1287 Maplewood Drive</p>
-              <p>Los Angeles, CA 90026</p>
-              <p>(323) 555-0192</p>
-              <p>serena@blakepsychology.com</p>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="h4 mb-8 text-white font-serif">Office Hours</h3>
-            <div className="space-y-3 text-gray-300 font-sans">
-              <p>In-person: Tue & Thu, 10 AM–6 PM</p>
-              <p>Virtual: Mon, Wed & Fri, 1 PM–5 PM</p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="border-t border-gray-800 pt-12 text-center text-gray-400">
-          <p className="font-sans">&copy; 2024 Dr. Serena Blake, PsyD. All rights reserved.</p>
-          <p className="mt-3 text-sm font-sans">
-            Licensed Clinical Psychologist • California License #PSY12345
+    <footer className="bg-[#f8f3ec] text-center py-16 px-4">
+      <div className="max-w-4xl mx-auto space-y-6">
+
+        <motion.h3
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-2xl md:text-3xl font-serif"
+        >
+          Dr. Sherna Blake, Licensed Psychologist
+        </motion.h3>
+
+        <motion.a
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          href="mailto:serena@blakepsychology.com"
+          className="underline text-lg hover:text-blue-600 block"
+        >
+          serena@blakepsychology.com
+        </motion.a>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-lg space-y-2"
+        >
+          <p>
+            Phone: <a href="tel:3235550192" className="underline hover:text-blue-600">(323) 555-0192</a>
           </p>
-        </div>
+          <p>1287 Maplewood Drive, Los Angeles, CA 90026</p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="space-x-4"
+        >
+          <a href="#" className="underline hover:text-blue-600">Home</a>
+          <a href="#" className="underline hover:text-blue-600">Privacy Policy</a>
+          <a href="#" className="underline hover:text-blue-600">Good Faith Estimate</a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="pt-4"
+        >
+          <a
+            href="https://drshernablake.sessionshealth.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-600"
+          >
+            Client Portal
+          </a>
+        </motion.div>
       </div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1 }}
+        className="text-sm text-gray-700 mt-12"
+      >
+        &copy; 2025 Dr. Sherna Blake Psychological Services. All rights reserved.
+      </motion.p>
     </footer>
   );
 }

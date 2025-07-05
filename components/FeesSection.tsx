@@ -1,48 +1,113 @@
-export default function FeesSection() {
+'use client';
+
+import { motion } from 'framer-motion';
+
+export default function FullPage() {
   return (
-    <section className="section-padding bg-white">
-      <div className="container-custom">
-        <div className="text-center mb-20">
-          <h2 className="h2 mb-6">
-            Session Fees
-          </h2>
-          <p className="body-text text-lg text-secondary-text">
-            Transparent pricing for quality psychological care
-          </p>
+    <div>
+
+      {/* Rates and Insurance Section */}
+      <section className="bg-[#96b5b6] text-center">
+        <div className="max-w-4xl mx-auto px-4 py-20">
+          {/* Heading */}
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-serif mb-8"
+          >
+            Rates and Insurance
+          </motion.h2>
+
+          {/* Session Fee */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl md:text-2xl mb-4"
+          >
+            Session Fee - $200
+          </motion.div>
+
+          {/* Psychodiagnostic Evaluation */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-xl md:text-2xl mb-8"
+          >
+            Psychodiagnostic Evaluation - $225
+          </motion.div>
+
+          {/* Insurance Info */}
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-base md:text-lg mb-4"
+          >
+            I accept both private pay and insurance. I am in-network with BCBS and Aetna.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-base md:text-lg"
+          >
+            For out-of-network plans, I’ve partnered with Mentaya using{' '}
+            <a
+              href="https://app.mentaya.com/public/practices/zGs5AgWuQhDtekoxCW7M/eligibility?p=qiXNacRErRNrk7OjP7lg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 hover:text-blue-800"
+            >
+              this tool
+            </a>{' '}
+            to help you check your eligibility for reimbursement for my services.
+          </motion.p>
         </div>
-        
-        <div className="max-w-3xl mx-auto space-y-12">
-          <div className="text-center py-12 border-b border-gray-200">
-            <h3 className="h3 mb-4 text-primary-text">
-              Individual Session
-            </h3>
-            <div className="text-4xl md:text-5xl font-serif text-primary-text mb-4">
-              $200
-            </div>
-            <p className="body-text text-lg text-secondary-text">
-              One-on-one therapy session (50 minutes)
-            </p>
-          </div>
-          
-          <div className="text-center py-12 border-b border-gray-200">
-            <h3 className="h3 mb-4 text-primary-text">
-              Couples Session
-            </h3>
-            <div className="text-4xl md:text-5xl font-serif text-primary-text mb-4">
-              $240
-            </div>
-            <p className="body-text text-lg text-secondary-text">
-              Relationship counseling session (60 minutes)
-            </p>
-          </div>
+
+        {/* Not Accepting Clients Section */}
+        <div className="bg-[#f8f3ec] py-12">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="text-xl md:text-2xl font-semibold"
+          >
+            Unable to accept new clients at this time.
+          </motion.p>
         </div>
-        
-        <div className="mt-16 text-center">
-          <p className="body-text text-lg text-secondary-text max-w-3xl mx-auto">
-            Insurance is not accepted, but a superbill is provided for self-submission to your insurance provider for potential reimbursement.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Quote Section */}
+      <section
+        className="bg-cover bg-center bg-no-repeat text-center py-24 px-4"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')",
+        }}
+      >
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-2xl md:text-4xl font-serif text-black mb-6 max-w-4xl mx-auto"
+        >
+          “I have come to believe that caring for myself is not self-indulgent.
+          <br />
+          Caring for myself is an act of survival.”
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg md:text-xl font-serif text-black"
+        >
+          — Audre Lorde
+        </motion.p>
+      </section>
+    </div>
   );
 }
